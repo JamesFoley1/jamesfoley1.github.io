@@ -1,28 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>James Foley | Portfolio</title>
-  <base href="https://jamesfoley1.github.io">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <!-- Github Pages hack to allow SPA refresh without receiving 404. -->
+  <meta charset="utf-8" />
+
+  <title>Match your application's title</title>
+
   <script>
-    (function () {
-      // Retrieve the URL the user was trying to access when receiving the 404.
-      var redirect = sessionStorage.redirect;
-      // Remove the URL from sessionStorage.
-      delete sessionStorage.redirect;
-      // Check if we actually need to redirect.
-      if (redirect && redirect != location.href) {
-        // We need to redirect to the URL the user was trying to access.
-        history.replaceState(null, null, redirect);
-      }
-    })();
+    // Store the URL the user was trying to access when receiving the 404.
+    sessionStorage.redirect = location.href;
   </script>
 
-<link rel="stylesheet" href="styles.15bd62dd6b38e6dc83cc.css"></head>
+  <!-- Immediately redirect to the base URL so we can use the SPA routing. -->
+  <meta http-equiv="refresh" content="0;URL='/'"></meta>
+</head>
+
 <body>
-  <app-root></app-root>
-<script type="text/javascript" src="runtime.a5dd35324ddfd942bef1.js"></script><script type="text/javascript" src="es2015-polyfills.67c5cff8371af1f9a1d4.js" nomodule></script><script type="text/javascript" src="polyfills.407a467dedb63cfdd103.js"></script><script type="text/javascript" src="scripts.c959ca199b10f3c1a2e6.js"></script><script type="text/javascript" src="main.a9825a05a91977df71a5.js"></script></body>
+<!-- IE required at least 512 bytes of data to show non-default 404. -->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</body>    
+            
+             
+</body>
+
 </html>
